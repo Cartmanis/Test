@@ -20,20 +20,20 @@
 export default {
   data() {
     return {
-      content: ''
-    }
+      content: "",
+      pageNumber: ""
+    };
   },
   computed: {
     id() {
-       return this.$route.params.id;
+      return this.$route.params.id;
     },
     currentNews() {
-        return this.$store.getters['news/getOneNews'](+this.id);
+      return this.$store.getters["news/getOneNews"](+this.id);
     }
   }
-}
+};
 </script>
 
 <style>
-
 </style>
